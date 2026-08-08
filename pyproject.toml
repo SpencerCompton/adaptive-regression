@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adaptive-regression"
+version = "0.3.0"
+description = "Adaptive Lq and automatic residual-balance linear regression"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.13", "cvxpy>=1.6"]
+
+[tool.setuptools.packages.find]
+include = ["adaptive_regression*"]
