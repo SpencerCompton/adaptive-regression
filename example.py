@@ -1,5 +1,4 @@
 import numpy as np
-import math
 
 from adaptive_regression import AdaptiveLqRegression, AutoRBDescRegressor
 
