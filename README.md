@@ -2,7 +2,7 @@
 
 This repository provides two adaptive linear-regression estimators:
 
-- `AdaptiveLqRegression`, which selects among Lq regression estimates.
+- `AdaptiveLqRegression`, which selects among $L_q$ regression estimates.
 - `AutoRBDescRegressor`, which applies residual-balance descent with automatic whitening and radius selection for mean-zero heteroskedastic errors.
 
 ## Installation
