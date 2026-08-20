@@ -1,4 +1,4 @@
-This repository contains estimators for linear regression we studied in [Attainability of Two-Point Testing Rates for Finite-Sample Location Estimation](https://arxiv.org/abs/2502.05730) by Spencer Compton and Gregory Valiant. See this paper for further details.
+This repository contains estimators for linear regression we studied in [Algorithms for adaptive and heteroskedastic linear regression at the computational threshold](https://arxiv.org/abs/2608.18402) by Spencer Compton and Tselil Schramm. See this paper for further details.
 
 The two linear regression estimators are:
 - `AdaptiveLqRegression`, which selects among $L_q$ regression estimates.
