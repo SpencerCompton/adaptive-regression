@@ -1,7 +1,6 @@
-# Adaptive Regression
+This repository contains estimators for linear regression we studied in [Attainability of Two-Point Testing Rates for Finite-Sample Location Estimation](https://arxiv.org/abs/2502.05730) by Spencer Compton and Gregory Valiant. See this paper for further details.
 
-This repository provides two adaptive linear-regression estimators:
-
+The two linear regression estimators are:
 - `AdaptiveLqRegression`, which selects among $L_q$ regression estimates.
 - `AutoRBDescRegressor`, which applies residual-balance descent with automatic whitening and radius selection for mean-zero heteroskedastic errors.
 
@@ -36,7 +35,7 @@ for i in range(len(noises)):
     auto_rbdesc = AutoRBDescRegressor().fit(X, y)
     print("Noise:",noise_names[i])
     print("AdaptiveLq:", adaptive_lq.coef_,"error:",np.linalg.norm(adaptive_lq.coef_-beta))
-    print("AutoRBDesc: ", auto_rbdesc.coef_,"error:",np.linalg.norm(auto_rbdesc.coef_-beta))
+    print("AutoRBDesc:", auto_rbdesc.coef_,"error:",np.linalg.norm(auto_rbdesc.coef_-beta))
 
 ```
 
